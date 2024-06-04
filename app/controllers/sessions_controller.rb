@@ -1,4 +1,8 @@
 class SessionsController < ApplicationController
+  def new
+    # Render the login form
+  end
+
   def create
     @user = User.find_by(email: params[:email])
 
