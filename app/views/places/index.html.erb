@@ -1,11 +1,24 @@
 <h1>Places</h1>
+<p>
+  <a href="/places/new" class="cta-button">New place</a>
+</p>
 
+<style>
+  .cta-button {
+    display: inline-block;
+    background-color: #FFFFFF;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+        border: 2px solid #000000;
+font-family: "Comic Sans MS", cursive, sans-serif; 
+  }
+</style>
 <ul>
   <% for place in @places %>
     <li><a href="/places/<%= place["id"] %>"><%= place["name"] %></a></li>
   <% end %>
 </ul>
 
-<p>
-  <a href="/places/new">New place</a>
-</p>
